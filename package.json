@@ -2,7 +2,8 @@
   "name": "cypress-test",
   "version": "1.0.0",
   "dependencies": {
-    "cypress": "*"
+    "cypress": "*",
+    "express": "*"
   },
   "scripts": {
     "cypress:run": "cypress run",
