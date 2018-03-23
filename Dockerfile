@@ -1,7 +1,5 @@
 FROM cypress/base:8
 WORKDIR /app
-COPY package.json ./
+COPY . .
 RUN npm install
-RUN npm run cypress:verify
-COPY cypress.json ./
-COPY cypress/ cypress/
+RUN npx cypress verify
